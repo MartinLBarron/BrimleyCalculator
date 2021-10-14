@@ -2,3 +2,4 @@
 
 export(BrimleyCalculator)
 import(glue)
+import(scales)

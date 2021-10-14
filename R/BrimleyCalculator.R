@@ -4,38 +4,43 @@
 #'
 #' @return date person will cross Brimley/Cacoon line
 #' @export
-#' @import glue
+#' @import glue scales
 #' @examples
 #' results <- BrimleyCalculator(as.Date("1973-12-18"))
-BrimleyCalculator <- function(bdate){
+BrimleyCalculator <- function(birthdate){
 
   #18,530 is the BrimleyCacoon line
   brimleyLine <- 18530
 
-  currentDate = Sys.Date()
+  currentDate <- Sys.Date()
 
   #How many days old is person
-  daysOld <- currentDate-bdate
+  daysOld <- currentDate-birthdate
+  daysOldf <- format(as.numeric(daysOld), big.mark=",")
 
   #When will they cross line
-  dateReachLine=bdate+brimleyLine
+  dateReachLine=birthdate+brimleyLine
 
   #Days until line
   daysUntil = brimleyLine - daysOld
-  devtools::create("myfirstpackage")
-  devtools::create("BrimleyCalculator")
+  daysUntilf = format(as.numeric(daysUntil), big.mark=",")
+
 
   #% of Brimley
-  percentBrimley <- daysOld/brimleyLine
+  percentBrimley <- paste0(round(daysOld/brimleyLine*100, digits=1),"%")
+
   #Print results
-  print(glue("a person born on {bdate}"))
-  print(glue("\tis {daysOld} days old"))
-  print(glue("\tis {percentBrimley}% the age Wilford Brimley was when Cacoon premeired"))
-  print(glue("\twill reach the Brimley/Cacoon Line on {dateReachLine}"))
-  print(glue("\twill reach line in {daysUntil} days"))
+  cat(paste0("a person born on ", birthdate, ":\n"))
+  cat(paste0("\t- is ", daysOldf, " days old\n"))
+  cat(paste0("\t- is ",percentBrimley, " the age Wilford Brimley was when Cacoon premeired\n"))
+  cat(paste0("\t- will reach the Brimley/Cacoon Line on ", dateReachLine, "\n"))
+  cat(paste0("\t- will reach line in ", daysUntilf, " days\n"))
 
   return(dt)
 }
 
-# results <- BrimleyCalculator(as.Date("1973-12-18"))
-#
+# results <- BrimleyCalculator::BrimleyCalculator(as.Date("1973-12-18"))
+# results <- BrimleyCalculator::BrimleyCalculator(as.Date("1971-01-20"))
+# results <- BrimleyCalculator::BrimleyCalculator(as.Date("1973-08-26"))
+# results <- BrimleyCalculator::BrimleyCalculator(as.Date("2006-08-26"))
+
