@@ -17,5 +17,5 @@ Brimley/Cacoon line.
 
 ```
 library(BrimleyCalculator)
-BrimleyCalculate(as.Date("1973-12-18"))
+BrimleyCalculator(as.Date("1973-12-18"))
 
