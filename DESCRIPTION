@@ -6,7 +6,7 @@ Authors@R:
 Description: This package takes a given birth date an calculate important 
     statistics related to the Brimley/Cacoon line (the age of Wilford Brimley
     at the premiere of Cacoon).
-License: MIT
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)

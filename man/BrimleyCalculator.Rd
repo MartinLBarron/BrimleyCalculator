@@ -4,10 +4,10 @@
 \alias{BrimleyCalculator}
 \title{Calculate Brimley/Cacoon line statistics}
 \usage{
-BrimleyCalculator(bdate)
+BrimleyCalculator(birthdate)
 }
 \arguments{
-\item{birtdate}{Date of person}
+\item{birthdate}{a date}
 }
 \value{
 date person will cross Brimley/Cacoon line
