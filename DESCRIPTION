@@ -1,11 +1,11 @@
 Package: BrimleyCalculator
-Title: Produces Statistics Related to Brimley/Cacoon Line
+Title: Produces Statistics Related to Brimley/Cocoon Line
 Version: 1.0
 Authors@R: 
     person("Martin", "Barron", , "martin@barron.cc", role = c("aut", "cre"))
 Description: This package takes a given birth date an calculate important 
-    statistics related to the Brimley/Cacoon line (the age of Wilford Brimley
-    at the premiere of Cacoon).
+    statistics related to the Brimley/Cocoon line (the age of Wilford Brimley
+    at the premiere of Cocoon).
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true

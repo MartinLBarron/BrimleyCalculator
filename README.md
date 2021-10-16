@@ -1,5 +1,5 @@
 # BrimleyCalculator
-An R package to calculate statistics related to the Brimley/Cacoon line.
+An R package to calculate statistics related to the Brimley/Cocoon line.
 
 This package was inspired by the great twitter account @BrimleyLine.
 
@@ -13,7 +13,7 @@ devtools::install_github("https://github.com/MartinLBarron/BrimleyCalculator.git
 
 ## Usage
 Simply feed a birthday to the calculator to learn when someone will cross the 
-Brimley/Cacoon line.
+Brimley/Cocoon line.
 
 ```
 library(BrimleyCalculator)

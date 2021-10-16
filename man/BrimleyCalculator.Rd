@@ -2,18 +2,15 @@
 % Please edit documentation in R/BrimleyCalculator.R
 \name{BrimleyCalculator}
 \alias{BrimleyCalculator}
-\title{Calculate Brimley/Cacoon line statistics}
+\title{Calculate Brimley/Cocoon line statistics}
 \usage{
 BrimleyCalculator(birthdate)
 }
-\arguments{
-\item{birthdate}{a date}
-}
 \value{
-date person will cross Brimley/Cacoon line
+date person will cross Brimley/Cocoon line
 }
 \description{
-Calculate Brimley/Cacoon line statistics
+Calculate Brimley/Cocoon line statistics
 }
 \examples{
 results <- BrimleyCalculator(as.Date("1973-12-18"))

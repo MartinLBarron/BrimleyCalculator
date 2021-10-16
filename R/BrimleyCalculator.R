@@ -1,14 +1,13 @@
-#' Calculate Brimley/Cacoon line statistics
+#' Calculate Brimley/Cocoon line statistics
 #'
-#' @param birthdate a date
 #'
-#' @return date person will cross Brimley/Cacoon line
+#' @return date person will cross Brimley/Cocoon line
 #' @export
 #' @examples
 #' results <- BrimleyCalculator(as.Date("1973-12-18"))
 BrimleyCalculator <- function(birthdate){
 
-  #18,530 is the BrimleyCacoon line
+  #18,530 is the Brimleycocoon line
   brimleyLine <- 18530
 
   currentDate <- Sys.Date()
@@ -84,8 +83,8 @@ BrimleyCalculator <- function(birthdate){
     cat("\n")
     cat(paste0("a person born on ", format(birthdate, "%B %d, %Y"), ":\n"))
     cat(paste0("\t- is ", daysOldf, " days old\n"))
-    cat(paste0("\t- is ",percentBrimley, " the age Wilford Brimley was when Cacoon premiered\n"))
-    cat(paste0("\t- will reach the Brimley/Cacoon Line on ", format(dateReachLine, "%B %d, %Y"), "\n"))
+    cat(paste0("\t- is ",percentBrimley, " the age Wilford Brimley was when Cocoon premiered\n"))
+    cat(paste0("\t- will reach the Brimley/Cocoon Line on ", format(dateReachLine, "%B %d, %Y"), "\n"))
     cat(paste0("\t- will reach line in ", daysUntilf, " days\n"))
   }
   else if (daysUntil<0){
@@ -93,8 +92,8 @@ BrimleyCalculator <- function(birthdate){
     cat("\n")
     cat(paste0("a person born on ", format(birthdate, "%B %d, %Y"), ":\n"))
     cat(paste0("\t- is ", daysOldf, " days old\n"))
-    cat(paste0("\t- is ",percentBrimley, " the age Wilford Brimley was when Cacoon premiered\n"))
-    cat(paste0("\t- crossed the Brimley/Cacoon Line on ", format(dateReachLine, "%B %d, %Y"), "\n"))
+    cat(paste0("\t- is ",percentBrimley, " the age Wilford Brimley was when Cocoon premiered\n"))
+    cat(paste0("\t- crossed the Brimley/Cocoon Line on ", format(dateReachLine, "%B %d, %Y"), "\n"))
     cat(paste0("\t- crossed the line ", daysUntilf, " days ago\n"))
   } else if (daysUntil==0){
     cat(art, sep="\n")
@@ -102,8 +101,8 @@ BrimleyCalculator <- function(birthdate){
     cat("Congratulations!!!\n")
     cat(paste0("a person born on ", format(birthdate, "%B %d, %Y"), ":\n"))
     cat(paste0("\t- is ", daysOldf, " days old\n"))
-    cat(paste0("\t- is ",percentBrimley, " the age Wilford Brimley was when Cacoon premiered\n"))
-    cat(paste0("\t- crossed the Brimley/Cacoon Line today, ", format(dateReachLine, "%B %d, %Y"), "\n"))
+    cat(paste0("\t- is ",percentBrimley, " the age Wilford Brimley was when Cocoon premiered\n"))
+    cat(paste0("\t- crossed the Brimley/Cocoon Line today, ", format(dateReachLine, "%B %d, %Y"), "\n"))
     cat(paste0("Bravo! You did it."))
   }
 
