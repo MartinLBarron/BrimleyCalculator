@@ -1,6 +1,6 @@
 Package: BrimleyCalculator
 Title: Produces Statistics Related to Brimley/Cocoon Line
-Version: 1.0
+Version: 1.0.1
 Authors@R: 
     person("Martin", "Barron", , "martin@barron.cc", role = c("aut", "cre"))
 Description: This package takes a given birth date an calculate important 
